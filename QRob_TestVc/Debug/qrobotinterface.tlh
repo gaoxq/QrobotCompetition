@@ -1,0 +1,482 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.30319.01 (a3c20cbe).
+//
+// d:\program files\ritech\qrobotdevelop\version1.1\sample\vc\vc\qrob_testvc\debug\qrobotinterface.tlh
+//
+// C++ source equivalent of Win32 type library D:\\Program Files\\Qrobot开发版V1.0\\QrobotInterface.dll
+// compiler-generated file created 11/26/13 at 20:45:19 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("ed99b33e-bac1-469a-a902-ffa158371ce4"))
+/* LIBID */ __QrobotInterfaceLib;
+struct /* coclass */ QrobotTalk;
+struct __declspec(uuid("441f0238-13e9-4b22-b1f2-9f6c37295d8c"))
+/* dual interface */ IQrobotTalk;
+struct /* coclass */ QrobotSpeak;
+struct __declspec(uuid("2ede74bb-100c-4850-bf7a-f15e22c55f4c"))
+/* dual interface */ IQrobotSpeak;
+struct /* coclass */ QrobotBasicImage;
+struct __declspec(uuid("61663e1a-983d-49ec-ae14-da8621b174c5"))
+/* dual interface */ IQrobotBasicImage;
+struct /* coclass */ QrobotScript;
+struct __declspec(uuid("6d405ba2-c28e-4eb2-a626-ccbcca08e56d"))
+/* dual interface */ IQrobotScript;
+struct /* coclass */ QrobotController;
+struct __declspec(uuid("730df41c-f4c9-4ea8-b6ad-87332e761db3"))
+/* dual interface */ IQrobotController;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IQrobotTalk, __uuidof(IQrobotTalk));
+_COM_SMARTPTR_TYPEDEF(IQrobotSpeak, __uuidof(IQrobotSpeak));
+_COM_SMARTPTR_TYPEDEF(IQrobotBasicImage, __uuidof(IQrobotBasicImage));
+_COM_SMARTPTR_TYPEDEF(IQrobotScript, __uuidof(IQrobotScript));
+_COM_SMARTPTR_TYPEDEF(IQrobotController, __uuidof(IQrobotController));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("3a0beecf-6977-41d6-ae25-c013e5a96dc3"))
+QrobotTalk;
+    // [ default ] interface IQrobotTalk
+
+struct __declspec(uuid("441f0238-13e9-4b22-b1f2-9f6c37295d8c"))
+IQrobotTalk : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    VARIANT_BOOL QroTalkInitial ( );
+    HRESULT SetRecordTime (
+        long milTimes );
+    VARIANT_BOOL StartRecognize (
+        _bstr_t strGrammName,
+        VARIANT_BOOL flagSave );
+    VARIANT_BOOL StopRecognize (
+        _bstr_t strPath );
+    VARIANT_BOOL StartVoiceRecord ( );
+    VARIANT_BOOL StopVoiceRecord (
+        _bstr_t strPath );
+    VARIANT_BOOL IsRecognizeMatch (
+        long * indexLocale,
+        long * indexClound );
+    HRESULT DisposeCurrentReco ( );
+    HRESULT ReleaseBuffer ( );
+    VARIANT_BOOL IsRecognizeFinish ( );
+    HRESULT SetVoiceCloudGrammer (
+        _bstr_t strGrammer );
+    VARIANT_BOOL OpenVoiceClound ( );
+    VARIANT_BOOL CloseVoiceCloud ( );
+    VARIANT_BOOL StartVoiceCloud ( );
+    VARIANT_BOOL StopVoiceCloud ( );
+    HRESULT SetVoiceCloundModule (
+        long moduler );
+    VARIANT_BOOL ChangScenceFile (
+        _bstr_t strScencePath );
+    HRESULT SetVoiceCloudDelay (
+        long timeSleep );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_QroTalkInitial (
+        /*[out,retval]*/ VARIANT_BOOL * ret ) = 0;
+      virtual HRESULT __stdcall raw_SetRecordTime (
+        /*[in]*/ long milTimes ) = 0;
+      virtual HRESULT __stdcall raw_StartRecognize (
+        /*[in]*/ BSTR strGrammName,
+        /*[in]*/ VARIANT_BOOL flagSave,
+        /*[out,retval]*/ VARIANT_BOOL * ret ) = 0;
+      virtual HRESULT __stdcall raw_StopRecognize (
+        /*[in]*/ BSTR strPath,
+        /*[out,retval]*/ VARIANT_BOOL * ret ) = 0;
+      virtual HRESULT __stdcall raw_StartVoiceRecord (
+        /*[out,retval]*/ VARIANT_BOOL * ret ) = 0;
+      virtual HRESULT __stdcall raw_StopVoiceRecord (
+        /*[in]*/ BSTR strPath,
+        /*[out,retval]*/ VARIANT_BOOL * ret ) = 0;
+      virtual HRESULT __stdcall raw_IsRecognizeMatch (
+        /*[in]*/ long * indexLocale,
+        /*[in]*/ long * indexClound,
+        /*[out,retval]*/ VARIANT_BOOL * ret ) = 0;
+      virtual HRESULT __stdcall raw_DisposeCurrentReco ( ) = 0;
+      virtual HRESULT __stdcall raw_ReleaseBuffer ( ) = 0;
+      virtual HRESULT __stdcall raw_IsRecognizeFinish (
+        /*[out,retval]*/ VARIANT_BOOL * ret ) = 0;
+      virtual HRESULT __stdcall raw_SetVoiceCloudGrammer (
+        /*[in]*/ BSTR strGrammer ) = 0;
+      virtual HRESULT __stdcall raw_OpenVoiceClound (
+        /*[out,retval]*/ VARIANT_BOOL * ret ) = 0;
+      virtual HRESULT __stdcall raw_CloseVoiceCloud (
+        /*[out,retval]*/ VARIANT_BOOL * ret ) = 0;
+      virtual HRESULT __stdcall raw_StartVoiceCloud (
+        /*[out,retval]*/ VARIANT_BOOL * ret ) = 0;
+      virtual HRESULT __stdcall raw_StopVoiceCloud (
+        /*[out,retval]*/ VARIANT_BOOL * ret ) = 0;
+      virtual HRESULT __stdcall raw_SetVoiceCloundModule (
+        /*[in]*/ long moduler ) = 0;
+      virtual HRESULT __stdcall raw_ChangScenceFile (
+        /*[in]*/ BSTR strScencePath,
+        /*[out,retval]*/ VARIANT_BOOL * ret ) = 0;
+      virtual HRESULT __stdcall raw_SetVoiceCloudDelay (
+        /*[in]*/ long timeSleep ) = 0;
+};
+
+struct __declspec(uuid("284605fc-26fd-459c-98b6-0f08437fbfd9"))
+QrobotSpeak;
+    // [ default ] interface IQrobotSpeak
+
+struct __declspec(uuid("2ede74bb-100c-4850-bf7a-f15e22c55f4c"))
+IQrobotSpeak : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    VARIANT_BOOL QroSpeakInitial ( );
+    HRESULT SetPlayMode (
+        long mode );
+    HRESULT PlayText (
+        _bstr_t strWords,
+        VARIANT_BOOL flagchange );
+    HRESULT PlayWaveFile (
+        _bstr_t path );
+    HRESULT PlayPcmFile (
+        _bstr_t path,
+        VARIANT_BOOL flagchange );
+    HRESULT AddWaveToPlayList (
+        _bstr_t path,
+        _bstr_t strReturn );
+    HRESULT AddPcmToPlayList (
+        _bstr_t path,
+        _bstr_t strReturn,
+        VARIANT_BOOL flagchange );
+    HRESULT AddTextToPlayList (
+        _bstr_t strText,
+        _bstr_t strReturn,
+        VARIANT_BOOL flagchange );
+    HRESULT StartAsynPlay ( );
+    HRESULT StopAsynPlay ( );
+    HRESULT ClearPlayList ( );
+    VARIANT_BOOL IsPlayerIdle ( );
+    HRESULT SetVoiceLocale (
+        long vLocale );
+    HRESULT SetVoiceSex (
+        long vSex );
+    HRESULT SetVoiceRole (
+        long vRole );
+    HRESULT SetVoiceSpeed (
+        long vSpeed );
+    long GetVoiceLocale ( );
+    long GetVoiceSex ( );
+    long GetVoiceRole ( );
+    long GetVoiceSpeed ( );
+    HRESULT AddWaitToPlayList (
+        long timeWait,
+        _bstr_t strReturn );
+    HRESULT AddRecToPlayList ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_QroSpeakInitial (
+        /*[out,retval]*/ VARIANT_BOOL * ret ) = 0;
+      virtual HRESULT __stdcall raw_SetPlayMode (
+        /*[in]*/ long mode ) = 0;
+      virtual HRESULT __stdcall raw_PlayText (
+        /*[in]*/ BSTR strWords,
+        /*[in]*/ VARIANT_BOOL flagchange ) = 0;
+      virtual HRESULT __stdcall raw_PlayWaveFile (
+        /*[in]*/ BSTR path ) = 0;
+      virtual HRESULT __stdcall raw_PlayPcmFile (
+        /*[in]*/ BSTR path,
+        /*[in]*/ VARIANT_BOOL flagchange ) = 0;
+      virtual HRESULT __stdcall raw_AddWaveToPlayList (
+        /*[in]*/ BSTR path,
+        /*[in]*/ BSTR strReturn ) = 0;
+      virtual HRESULT __stdcall raw_AddPcmToPlayList (
+        /*[in]*/ BSTR path,
+        /*[in]*/ BSTR strReturn,
+        /*[in]*/ VARIANT_BOOL flagchange ) = 0;
+      virtual HRESULT __stdcall raw_AddTextToPlayList (
+        /*[in]*/ BSTR strText,
+        /*[in]*/ BSTR strReturn,
+        /*[in]*/ VARIANT_BOOL flagchange ) = 0;
+      virtual HRESULT __stdcall raw_StartAsynPlay ( ) = 0;
+      virtual HRESULT __stdcall raw_StopAsynPlay ( ) = 0;
+      virtual HRESULT __stdcall raw_ClearPlayList ( ) = 0;
+      virtual HRESULT __stdcall raw_IsPlayerIdle (
+        /*[out,retval]*/ VARIANT_BOOL * ret ) = 0;
+      virtual HRESULT __stdcall raw_SetVoiceLocale (
+        /*[in]*/ long vLocale ) = 0;
+      virtual HRESULT __stdcall raw_SetVoiceSex (
+        /*[in]*/ long vSex ) = 0;
+      virtual HRESULT __stdcall raw_SetVoiceRole (
+        /*[in]*/ long vRole ) = 0;
+      virtual HRESULT __stdcall raw_SetVoiceSpeed (
+        /*[in]*/ long vSpeed ) = 0;
+      virtual HRESULT __stdcall raw_GetVoiceLocale (
+        /*[out,retval]*/ long * ret ) = 0;
+      virtual HRESULT __stdcall raw_GetVoiceSex (
+        /*[out,retval]*/ long * ret ) = 0;
+      virtual HRESULT __stdcall raw_GetVoiceRole (
+        /*[out,retval]*/ long * ret ) = 0;
+      virtual HRESULT __stdcall raw_GetVoiceSpeed (
+        /*[out,retval]*/ long * ret ) = 0;
+      virtual HRESULT __stdcall raw_AddWaitToPlayList (
+        /*[in]*/ long timeWait,
+        /*[in]*/ BSTR strReturn ) = 0;
+      virtual HRESULT __stdcall raw_AddRecToPlayList ( ) = 0;
+};
+
+struct __declspec(uuid("55390dfd-b038-40a9-8f78-bc854dba8a0e"))
+QrobotBasicImage;
+    // [ default ] interface IQrobotBasicImage
+
+struct __declspec(uuid("61663e1a-983d-49ec-ae14-da8621b174c5"))
+IQrobotBasicImage : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT CreateImage (
+        long Width,
+        long Height );
+    VARIANT_BOOL OpenImage (
+        _bstr_t strName );
+    VARIANT_BOOL SaveImage (
+        _bstr_t strName );
+    HRESULT ShowImage (
+        __int64 pDC,
+        long ptStartX,
+        long ptStartY,
+        double showRate );
+    HRESULT ReleaseMem ( );
+    long GetImageWidth ( );
+    long GetImageHeight ( );
+    long GetLineBytes ( );
+    HRESULT ImageScale (
+        double rate,
+        long scaleMode );
+    HRESULT ImageResize (
+        long newWidth,
+        long newHeight,
+        long resizeMode );
+    HRESULT BeginDraw ( );
+    HRESULT DrawImageText (
+        _bstr_t strText,
+        long ptBeginX,
+        long ptBeginY,
+        unsigned long fontColor,
+        unsigned short fontHeight,
+        _bstr_t fontName );
+    HRESULT DrawImageLine (
+        long ptBeginX,
+        long ptBeginY,
+        long ptEndX,
+        long ptEndY,
+        unsigned short lineWidth,
+        unsigned long lineColor );
+    HRESULT EndDraw ( );
+    unsigned __int64 GetImageHDC ( );
+    HRESULT CloneImage (
+        IUnknown * orgImage );
+    _variant_t GetImageData ( );
+    HRESULT CreateImageFromBuffer (
+        long Width,
+        long Height,
+        const _variant_t & pBuffer );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_CreateImage (
+        /*[in]*/ long Width,
+        /*[in]*/ long Height ) = 0;
+      virtual HRESULT __stdcall raw_OpenImage (
+        /*[in]*/ BSTR strName,
+        /*[out,retval]*/ VARIANT_BOOL * ret ) = 0;
+      virtual HRESULT __stdcall raw_SaveImage (
+        /*[in]*/ BSTR strName,
+        /*[out,retval]*/ VARIANT_BOOL * ret ) = 0;
+      virtual HRESULT __stdcall raw_ShowImage (
+        /*[in]*/ __int64 pDC,
+        /*[in]*/ long ptStartX,
+        /*[in]*/ long ptStartY,
+        /*[in]*/ double showRate ) = 0;
+      virtual HRESULT __stdcall raw_ReleaseMem ( ) = 0;
+      virtual HRESULT __stdcall raw_GetImageWidth (
+        /*[out,retval]*/ long * Width ) = 0;
+      virtual HRESULT __stdcall raw_GetImageHeight (
+        /*[out,retval]*/ long * Height ) = 0;
+      virtual HRESULT __stdcall raw_GetLineBytes (
+        /*[out,retval]*/ long * lineBytes ) = 0;
+      virtual HRESULT __stdcall raw_ImageScale (
+        /*[in]*/ double rate,
+        /*[in]*/ long scaleMode ) = 0;
+      virtual HRESULT __stdcall raw_ImageResize (
+        /*[in]*/ long newWidth,
+        /*[in]*/ long newHeight,
+        /*[in]*/ long resizeMode ) = 0;
+      virtual HRESULT __stdcall raw_BeginDraw ( ) = 0;
+      virtual HRESULT __stdcall raw_DrawImageText (
+        /*[in]*/ BSTR strText,
+        /*[in]*/ long ptBeginX,
+        /*[in]*/ long ptBeginY,
+        /*[in]*/ unsigned long fontColor,
+        /*[in]*/ unsigned short fontHeight,
+        /*[in]*/ BSTR fontName ) = 0;
+      virtual HRESULT __stdcall raw_DrawImageLine (
+        /*[in]*/ long ptBeginX,
+        /*[in]*/ long ptBeginY,
+        /*[in]*/ long ptEndX,
+        /*[in]*/ long ptEndY,
+        /*[in]*/ unsigned short lineWidth,
+        /*[in]*/ unsigned long lineColor ) = 0;
+      virtual HRESULT __stdcall raw_EndDraw ( ) = 0;
+      virtual HRESULT __stdcall raw_GetImageHDC (
+        /*[out,retval]*/ unsigned __int64 * retDC ) = 0;
+      virtual HRESULT __stdcall raw_CloneImage (
+        /*[in]*/ IUnknown * orgImage ) = 0;
+      virtual HRESULT __stdcall raw_GetImageData (
+        /*[out,retval]*/ VARIANT * pBuffer ) = 0;
+      virtual HRESULT __stdcall raw_CreateImageFromBuffer (
+        /*[in]*/ long Width,
+        /*[in]*/ long Height,
+        /*[in]*/ VARIANT pBuffer ) = 0;
+};
+
+struct __declspec(uuid("503ef134-4389-4109-946e-66ff72e9397e"))
+QrobotScript;
+    // [ default ] interface IQrobotScript
+
+struct __declspec(uuid("6d405ba2-c28e-4eb2-a626-ccbcca08e56d"))
+IQrobotScript : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    VARIANT_BOOL OpenMotionFile (
+        _bstr_t strPath );
+    VARIANT_BOOL AddMotionFile (
+        _bstr_t strPath );
+    VARIANT_BOOL GetCompiledText ( );
+    HRESULT ClearAllCmds ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_OpenMotionFile (
+        /*[in]*/ BSTR strPath,
+        /*[out,retval]*/ VARIANT_BOOL * ret ) = 0;
+      virtual HRESULT __stdcall raw_AddMotionFile (
+        /*[in]*/ BSTR strPath,
+        /*[out,retval]*/ VARIANT_BOOL * ret ) = 0;
+      virtual HRESULT __stdcall raw_GetCompiledText (
+        /*[out,retval]*/ VARIANT_BOOL * retFlag ) = 0;
+      virtual HRESULT __stdcall raw_ClearAllCmds ( ) = 0;
+};
+
+struct __declspec(uuid("184f738f-75e8-43dc-a9f8-fe80cf4c7d89"))
+QrobotController;
+    // [ default ] interface IQrobotController
+
+struct __declspec(uuid("730df41c-f4c9-4ea8-b6ad-87332e761db3"))
+IQrobotController : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    VARIANT_BOOL ReadPowerState (
+        VARIANT_BOOL * state );
+    VARIANT_BOOL SetDiffEyeImgFromImage (
+        IUnknown * imgLeft,
+        IUnknown * imgRight );
+    VARIANT_BOOL SetSameEyeImgFromImage (
+        IUnknown * imgShow );
+    HRESULT SetMotionCtrl (
+        IUnknown * mEditer );
+    VARIANT_BOOL DoRobotMove (
+        _bstr_t strMotionText );
+    VARIANT_BOOL IsOrderIdle ( );
+    HRESULT SetEyeShowEnable (
+        VARIANT_BOOL showFlag );
+    HRESULT SetPartMoveEnable (
+        VARIANT_BOOL moveFlag );
+    HRESULT MotionStop ( );
+    VARIANT_BOOL GetEyeSize (
+        long * Width,
+        long * Height );
+    VARIANT_BOOL SetEyeImgFromPath (
+        _bstr_t strNameL,
+        _bstr_t strNameR );
+    VARIANT_BOOL UpdateMotorPosition ( );
+    VARIANT_BOOL GetMotorPosition (
+        unsigned long * posArray );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_ReadPowerState (
+        /*[out]*/ VARIANT_BOOL * state,
+        /*[out,retval]*/ VARIANT_BOOL * retFlag ) = 0;
+      virtual HRESULT __stdcall raw_SetDiffEyeImgFromImage (
+        /*[in]*/ IUnknown * imgLeft,
+        /*[in]*/ IUnknown * imgRight,
+        /*[out,retval]*/ VARIANT_BOOL * retFlag ) = 0;
+      virtual HRESULT __stdcall raw_SetSameEyeImgFromImage (
+        /*[in]*/ IUnknown * imgShow,
+        /*[out,retval]*/ VARIANT_BOOL * retFlag ) = 0;
+      virtual HRESULT __stdcall raw_SetMotionCtrl (
+        /*[in]*/ IUnknown * mEditer ) = 0;
+      virtual HRESULT __stdcall raw_DoRobotMove (
+        /*[in]*/ BSTR strMotionText,
+        /*[out,retval]*/ VARIANT_BOOL * retFlag ) = 0;
+      virtual HRESULT __stdcall raw_IsOrderIdle (
+        /*[out,retval]*/ VARIANT_BOOL * retFlag ) = 0;
+      virtual HRESULT __stdcall raw_SetEyeShowEnable (
+        /*[in]*/ VARIANT_BOOL showFlag ) = 0;
+      virtual HRESULT __stdcall raw_SetPartMoveEnable (
+        /*[in]*/ VARIANT_BOOL moveFlag ) = 0;
+      virtual HRESULT __stdcall raw_MotionStop ( ) = 0;
+      virtual HRESULT __stdcall raw_GetEyeSize (
+        /*[out]*/ long * Width,
+        /*[out]*/ long * Height,
+        /*[out,retval]*/ VARIANT_BOOL * retFlag ) = 0;
+      virtual HRESULT __stdcall raw_SetEyeImgFromPath (
+        /*[in]*/ BSTR strNameL,
+        /*[in]*/ BSTR strNameR,
+        /*[out,retval]*/ VARIANT_BOOL * retFlag ) = 0;
+      virtual HRESULT __stdcall raw_UpdateMotorPosition (
+        /*[out,retval]*/ VARIANT_BOOL * retFlag ) = 0;
+      virtual HRESULT __stdcall raw_GetMotorPosition (
+        /*[out]*/ unsigned long * posArray,
+        /*[out,retval]*/ VARIANT_BOOL * retFlag ) = 0;
+};
+
+//
+// Wrapper method implementations
+//
+
+#include "d:\program files\ritech\qrobotdevelop\version1.1\sample\vc\vc\qrob_testvc\debug\qrobotinterface.tli"
+
+#pragma pack(pop)

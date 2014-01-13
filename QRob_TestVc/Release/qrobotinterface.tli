@@ -1,0 +1,516 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 10.00.30319.01 (9b37c646).
+//
+// d:\program files\ritech\qrobotdevelop\version1.1\sample\vc\vc\qrob_testvc\release\qrobotinterface.tli
+//
+// Wrapper implementations for Win32 type library D:\\Program Files\\Qrobot开发版V1.0\\QrobotInterface.dll
+// compiler-generated file created 11/25/13 at 22:41:42 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface IQrobotTalk wrapper method implementations
+//
+
+inline VARIANT_BOOL IQrobotTalk::QroTalkInitial ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_QroTalkInitial(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IQrobotTalk::SetRecordTime ( long milTimes ) {
+    HRESULT _hr = raw_SetRecordTime(milTimes);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL IQrobotTalk::StartRecognize ( _bstr_t strGrammName, VARIANT_BOOL flagSave ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_StartRecognize(strGrammName, flagSave, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IQrobotTalk::StopRecognize ( _bstr_t strPath ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_StopRecognize(strPath, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IQrobotTalk::StartVoiceRecord ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_StartVoiceRecord(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IQrobotTalk::StopVoiceRecord ( _bstr_t strPath ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_StopVoiceRecord(strPath, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IQrobotTalk::IsRecognizeMatch ( long * indexLocale, long * indexClound ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsRecognizeMatch(indexLocale, indexClound, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IQrobotTalk::DisposeCurrentReco ( ) {
+    HRESULT _hr = raw_DisposeCurrentReco();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IQrobotTalk::ReleaseBuffer ( ) {
+    HRESULT _hr = raw_ReleaseBuffer();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL IQrobotTalk::IsRecognizeFinish ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsRecognizeFinish(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IQrobotTalk::SetVoiceCloudGrammer ( _bstr_t strGrammer ) {
+    HRESULT _hr = raw_SetVoiceCloudGrammer(strGrammer);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL IQrobotTalk::OpenVoiceClound ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_OpenVoiceClound(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IQrobotTalk::CloseVoiceCloud ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_CloseVoiceCloud(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IQrobotTalk::StartVoiceCloud ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_StartVoiceCloud(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IQrobotTalk::StopVoiceCloud ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_StopVoiceCloud(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IQrobotTalk::SetVoiceCloundModule ( long moduler ) {
+    HRESULT _hr = raw_SetVoiceCloundModule(moduler);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL IQrobotTalk::ChangScenceFile ( _bstr_t strScencePath ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_ChangScenceFile(strScencePath, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IQrobotTalk::SetVoiceCloudDelay ( long timeSleep ) {
+    HRESULT _hr = raw_SetVoiceCloudDelay(timeSleep);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IQrobotSpeak wrapper method implementations
+//
+
+inline VARIANT_BOOL IQrobotSpeak::QroSpeakInitial ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_QroSpeakInitial(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IQrobotSpeak::SetPlayMode ( long mode ) {
+    HRESULT _hr = raw_SetPlayMode(mode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IQrobotSpeak::PlayText ( _bstr_t strWords, VARIANT_BOOL flagchange ) {
+    HRESULT _hr = raw_PlayText(strWords, flagchange);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IQrobotSpeak::PlayWaveFile ( _bstr_t path ) {
+    HRESULT _hr = raw_PlayWaveFile(path);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IQrobotSpeak::PlayPcmFile ( _bstr_t path, VARIANT_BOOL flagchange ) {
+    HRESULT _hr = raw_PlayPcmFile(path, flagchange);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IQrobotSpeak::AddWaveToPlayList ( _bstr_t path, _bstr_t strReturn ) {
+    HRESULT _hr = raw_AddWaveToPlayList(path, strReturn);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IQrobotSpeak::AddPcmToPlayList ( _bstr_t path, _bstr_t strReturn, VARIANT_BOOL flagchange ) {
+    HRESULT _hr = raw_AddPcmToPlayList(path, strReturn, flagchange);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IQrobotSpeak::AddTextToPlayList ( _bstr_t strText, _bstr_t strReturn, VARIANT_BOOL flagchange ) {
+    HRESULT _hr = raw_AddTextToPlayList(strText, strReturn, flagchange);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IQrobotSpeak::StartAsynPlay ( ) {
+    HRESULT _hr = raw_StartAsynPlay();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IQrobotSpeak::StopAsynPlay ( ) {
+    HRESULT _hr = raw_StopAsynPlay();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IQrobotSpeak::ClearPlayList ( ) {
+    HRESULT _hr = raw_ClearPlayList();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL IQrobotSpeak::IsPlayerIdle ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsPlayerIdle(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IQrobotSpeak::SetVoiceLocale ( long vLocale ) {
+    HRESULT _hr = raw_SetVoiceLocale(vLocale);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IQrobotSpeak::SetVoiceSex ( long vSex ) {
+    HRESULT _hr = raw_SetVoiceSex(vSex);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IQrobotSpeak::SetVoiceRole ( long vRole ) {
+    HRESULT _hr = raw_SetVoiceRole(vRole);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IQrobotSpeak::SetVoiceSpeed ( long vSpeed ) {
+    HRESULT _hr = raw_SetVoiceSpeed(vSpeed);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long IQrobotSpeak::GetVoiceLocale ( ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetVoiceLocale(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IQrobotSpeak::GetVoiceSex ( ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetVoiceSex(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IQrobotSpeak::GetVoiceRole ( ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetVoiceRole(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IQrobotSpeak::GetVoiceSpeed ( ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetVoiceSpeed(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IQrobotSpeak::AddWaitToPlayList ( long timeWait, _bstr_t strReturn ) {
+    HRESULT _hr = raw_AddWaitToPlayList(timeWait, strReturn);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IQrobotSpeak::AddRecToPlayList ( ) {
+    HRESULT _hr = raw_AddRecToPlayList();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IQrobotBasicImage wrapper method implementations
+//
+
+inline HRESULT IQrobotBasicImage::CreateImage ( long Width, long Height ) {
+    HRESULT _hr = raw_CreateImage(Width, Height);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL IQrobotBasicImage::OpenImage ( _bstr_t strName ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_OpenImage(strName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IQrobotBasicImage::SaveImage ( _bstr_t strName ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_SaveImage(strName, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IQrobotBasicImage::ShowImage ( __int64 pDC, long ptStartX, long ptStartY, double showRate ) {
+    HRESULT _hr = raw_ShowImage(pDC, ptStartX, ptStartY, showRate);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IQrobotBasicImage::ReleaseMem ( ) {
+    HRESULT _hr = raw_ReleaseMem();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long IQrobotBasicImage::GetImageWidth ( ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetImageWidth(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IQrobotBasicImage::GetImageHeight ( ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetImageHeight(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long IQrobotBasicImage::GetLineBytes ( ) {
+    long _result = 0;
+    HRESULT _hr = raw_GetLineBytes(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IQrobotBasicImage::ImageScale ( double rate, long scaleMode ) {
+    HRESULT _hr = raw_ImageScale(rate, scaleMode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IQrobotBasicImage::ImageResize ( long newWidth, long newHeight, long resizeMode ) {
+    HRESULT _hr = raw_ImageResize(newWidth, newHeight, resizeMode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IQrobotBasicImage::BeginDraw ( ) {
+    HRESULT _hr = raw_BeginDraw();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IQrobotBasicImage::DrawImageText ( _bstr_t strText, long ptBeginX, long ptBeginY, unsigned long fontColor, unsigned short fontHeight, _bstr_t fontName ) {
+    HRESULT _hr = raw_DrawImageText(strText, ptBeginX, ptBeginY, fontColor, fontHeight, fontName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IQrobotBasicImage::DrawImageLine ( long ptBeginX, long ptBeginY, long ptEndX, long ptEndY, unsigned short lineWidth, unsigned long lineColor ) {
+    HRESULT _hr = raw_DrawImageLine(ptBeginX, ptBeginY, ptEndX, ptEndY, lineWidth, lineColor);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IQrobotBasicImage::EndDraw ( ) {
+    HRESULT _hr = raw_EndDraw();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline unsigned __int64 IQrobotBasicImage::GetImageHDC ( ) {
+    unsigned __int64 _result = 0;
+    HRESULT _hr = raw_GetImageHDC(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IQrobotBasicImage::CloneImage ( IUnknown * orgImage ) {
+    HRESULT _hr = raw_CloneImage(orgImage);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _variant_t IQrobotBasicImage::GetImageData ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = raw_GetImageData(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline HRESULT IQrobotBasicImage::CreateImageFromBuffer ( long Width, long Height, const _variant_t & pBuffer ) {
+    HRESULT _hr = raw_CreateImageFromBuffer(Width, Height, pBuffer);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IQrobotScript wrapper method implementations
+//
+
+inline VARIANT_BOOL IQrobotScript::OpenMotionFile ( _bstr_t strPath ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_OpenMotionFile(strPath, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IQrobotScript::AddMotionFile ( _bstr_t strPath ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_AddMotionFile(strPath, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IQrobotScript::GetCompiledText ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_GetCompiledText(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IQrobotScript::ClearAllCmds ( ) {
+    HRESULT _hr = raw_ClearAllCmds();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface IQrobotController wrapper method implementations
+//
+
+inline VARIANT_BOOL IQrobotController::ReadPowerState ( VARIANT_BOOL * state ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_ReadPowerState(state, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IQrobotController::SetDiffEyeImgFromImage ( IUnknown * imgLeft, IUnknown * imgRight ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_SetDiffEyeImgFromImage(imgLeft, imgRight, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IQrobotController::SetSameEyeImgFromImage ( IUnknown * imgShow ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_SetSameEyeImgFromImage(imgShow, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IQrobotController::SetMotionCtrl ( IUnknown * mEditer ) {
+    HRESULT _hr = raw_SetMotionCtrl(mEditer);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL IQrobotController::DoRobotMove ( _bstr_t strMotionText ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_DoRobotMove(strMotionText, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IQrobotController::IsOrderIdle ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_IsOrderIdle(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT IQrobotController::SetEyeShowEnable ( VARIANT_BOOL showFlag ) {
+    HRESULT _hr = raw_SetEyeShowEnable(showFlag);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IQrobotController::SetPartMoveEnable ( VARIANT_BOOL moveFlag ) {
+    HRESULT _hr = raw_SetPartMoveEnable(moveFlag);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IQrobotController::MotionStop ( ) {
+    HRESULT _hr = raw_MotionStop();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline VARIANT_BOOL IQrobotController::GetEyeSize ( long * Width, long * Height ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_GetEyeSize(Width, Height, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IQrobotController::SetEyeImgFromPath ( _bstr_t strNameL, _bstr_t strNameR ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_SetEyeImgFromPath(strNameL, strNameR, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IQrobotController::UpdateMotorPosition ( ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_UpdateMotorPosition(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline VARIANT_BOOL IQrobotController::GetMotorPosition ( unsigned long * posArray ) {
+    VARIANT_BOOL _result = 0;
+    HRESULT _hr = raw_GetMotorPosition(posArray, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}

@@ -1,0 +1,9 @@
+; QRob_TestVc.def : Declares the module parameters.
+
+LIBRARY      "QRob_TestVc.OCX"
+
+EXPORTS
+	DllCanUnloadNow     PRIVATE
+	DllGetClassObject   PRIVATE
+	DllRegisterServer   PRIVATE
+	DllUnregisterServer PRIVATE

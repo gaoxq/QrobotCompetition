@@ -1,0 +1,51 @@
+﻿生成启动时间为 2013/12/12 10:28:03。
+     1>项目“D:\Program Files\Ritech\QrobotDevelop\Version1.1\sample\VC\VC\QRob_TestVc\QRob_TestVc.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Release\QRob_TestVc.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       Midl:
+         所有输出均为最新。
+       ClCompile:
+         所有输出均为最新。
+         d:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\QRob_TestVc.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt CameraDlg.cpp LearnDlg.cpp
+         CameraDlg.cpp
+     1>d:\opencv2.4.6\opencv\build\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+     1>CameraDlg.cpp(285): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>CameraDlg.cpp(313): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+         LearnDlg.cpp
+     1>d:\opencv2.4.6\opencv\build\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : 参见“fopen”的声明
+       ResourceCompile:
+         所有输出均为最新。
+       Link:
+         d:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Program Files\Ritech\QrobotDevelop\Version1.1\sample\VC\VC\Release\QRob_TestVc.dll" /INCREMENTAL:NO /NOLOGO opencv_contrib246.lib opencv_core246.lib opencv_features2d246.lib opencv_flann246.lib opencv_gpu246.lib opencv_highgui246.lib opencv_imgproc246.lib opencv_legacy246.lib opencv_ml246.lib opencv_objdetect246.lib opencv_ts246.lib opencv_video246.lib /DEF:".\QRob_TestVc.def" /MANIFEST /ManifestFile:"Release\QRob_TestVc.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Program Files\Ritech\QrobotDevelop\Version1.1\sample\VC\VC\Release\QRob_TestVc.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Program Files\Ritech\QrobotDevelop\Version1.1\sample\VC\VC\Release\QRob_TestVc.lib" /MACHINE:X86 /DLL Release\QRob_TestVc.res
+         Release\camera1.obj
+         Release\CameraDlg.obj
+         Release\CvvImage.obj
+         Release\DlgMain.obj
+         Release\LearnDlg.obj
+         Release\PicDialog.obj
+         Release\QRob_TestVc.obj
+         Release\QRob_TestVcCtrl.obj
+         Release\QRob_TestVcPropPage.obj
+         Release\qroboteventctrl1.obj
+         Release\stdafx.obj
+            正在创建库 D:\Program Files\Ritech\QrobotDevelop\Version1.1\sample\VC\VC\Release\QRob_TestVc.lib 和对象 D:\Program Files\Ritech\QrobotDevelop\Version1.1\sample\VC\VC\Release\QRob_TestVc.exp
+     1>QRob_TestVc.exp : warning LNK4070: .EXP 中的 /OUT:QRob_TestVc.OCX 指令与输出文件名“D:\Program Files\Ritech\QrobotDevelop\Version1.1\sample\VC\VC\Release\QRob_TestVc.dll”不同；忽略指令
+         正在生成代码
+         已完成代码的生成
+     1>QRob_TestVc.exp : warning LNK4070: .EXP 中的 /OUT:QRob_TestVc.OCX 指令与输出文件名“D:\Program Files\Ritech\QrobotDevelop\Version1.1\sample\VC\VC\Release\QRob_TestVc.dll”不同；忽略指令
+         QRob_TestVc.vcxproj -> D:\Program Files\Ritech\QrobotDevelop\Version1.1\sample\VC\VC\Release\QRob_TestVc.dll
+       Manifest:
+         c:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\Program Files\Ritech\QrobotDevelop\Version1.1\sample\VC\VC\Release\QRob_TestVc.dll;#2" /manifest Release\QRob_TestVc.dll.intermediate.manifest "d:\Program Files\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+       RegisterOutput:
+         regsvr32 /s "D:\Program Files\Ritech\QrobotDevelop\Version1.1\sample\VC\VC\Release\QRob_TestVc.dll"
+       FinalizeBuildStatus:
+         正在删除文件“Release\QRob_TestVc.unsuccessfulbuild”。
+         正在对“Release\QRob_TestVc.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\Program Files\Ritech\QrobotDevelop\Version1.1\sample\VC\VC\QRob_TestVc\QRob_TestVc.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:17.47

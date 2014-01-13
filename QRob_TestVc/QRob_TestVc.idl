@@ -1,0 +1,52 @@
+// QRob_TestVc.idl : type library source for ActiveX Control project.
+
+// This file will be processed by the MIDL compiler tool to
+// produce the type library (QRob_TestVc.tlb) that will become a resource in
+// QRob_TestVc.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(B617ACD7-605E-4B20-B456-B2A0EA895444), version(1.0),
+  helpfile("QRob_TestVc.hlp"),
+  helpstring("QRob_TestVc ActiveX Control module"),
+  control ]
+library QRob_TestVcLib
+{
+	importlib(STDOLE_TLB);
+
+	//  Primary dispatch interface for CQRob_TestVcCtrl
+
+	[ uuid(A89314B0-2045-478B-A820-588F0D3C51D3),
+	  helpstring("Dispatch interface for QRob_TestVc Control")]
+	dispinterface _DQRob_TestVc
+	{
+		properties:
+		methods:
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+	};
+
+	//  Event dispatch interface for CQRob_TestVcCtrl
+
+	[ uuid(F34063ED-6096-4D6C-B93C-7C25C1D9BC01),
+	  helpstring("Event interface for QRob_TestVc Control") ]
+	dispinterface _DQRob_TestVcEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+	};
+
+	//  Class information for CQRob_TestVcCtrl
+
+	[ uuid(D81861FC-364B-44E1-8D93-5B6E63D17F63),
+	  helpstring("QRob_TestVc Control"), control ]
+	coclass QRob_TestVc
+	{
+		[default] dispinterface _DQRob_TestVc;
+		[default, source] dispinterface _DQRob_TestVcEvents;
+	};
+
+};
